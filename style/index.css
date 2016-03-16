@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.toolbar {
+  position: fixed;
+  left: 50%;
+  bottom: 50px;
+  margin-left: -26px;
+}
+
+.toolbar-item {
+  display: block;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+  margin-top: 1px;
+}
+
+.toolbar-item:after {
+  content: "";
+  background-repeat: no-repeat;
+  display: block;
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transform: scale(0.01);
+  -moz-transform: scale(0.01);
+  -ms-transform: scale(0.01);
+  -o-transform: scale(0.01);
+  transform: scale(0.01);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+
+@font-face {
+  font-family: "iconfont";
+  src: url("fonts/iconfont.eot");
+  /* IE9*/
+  src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+.toolbar-btn {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 52px;
+  height: 52px;
+}
+
+.toolbar-btn:hover:before {
+  top: -52px;
+}
+.toolbar-btn:hover:after {
+  top: 0;
+}
+.toolbar-btn:before {
+  content: "";
+  font-family: "iconfont" !important;
+  font-size: 35px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 52px;
+  color: #fff;
+  background: #cfd5d8;
+  text-align: center;
+  -webkit-transition: top 0.3s;
+  -moz-transition: top 0.3s;
+  -ms-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
+}
+.toolbar-btn:after {
+  content: "";
+  font-family: "Microsoft Yahei";
+  font-size: 13px;
+  display: block;
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  left: 0;
+  top: 52px;
+  padding-top: 7px;
+  color: #fff;
+  background: #97a0a4;
+  text-align: center;
+  white-space: pre;
+  -webkit-transition: top 0.3s;
+  -moz-transition: top 0.3s;
+  -ms-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.toolbar-item-download:after {
+  content: "";
+  background-image: url(../images/download.png);
+  right: 48px;
+  bottom: -5px;
+  -webkit-transform-origin: 95% 95%;
+  -moz-transform-origin: 95% 95%;
+  -ms-transform-origin: 95% 95%;
+  -o-transform-origin: 95% 95%;
+  transform-origin: 95% 95%;
+}
+.toolbar-item-download:hover:after {
+  content: "";
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.toolbar-item-download .toolbar-btn:before {
+  content: "\e832";
+}
+.toolbar-item-download .toolbar-btn:after {
+  content: 'APP\A下载';
+}
+
+.toolbar-item-weixin:after {
+  content: "";
+  background-image: url(../images/weixin.png);
+  right: 52px;
+  bottom: 0;
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  -ms-transform-origin: 100% 100%;
+  -o-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
+.toolbar-item-weixin:hover:after {
+  content: "";
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.toolbar-item-weixin .toolbar-btn:before {
+  content: "\e60d";
+  font-size: 32px;
+}
+.toolbar-item-weixin .toolbar-btn:after {
+  content: '公众\A账号';
+}
+
+.toolbar-item-top .toolbar-btn:before {
+  content: "\e613";
+}
+.toolbar-item-top .toolbar-btn:after {
+  content: '返回\A顶部';
+}
