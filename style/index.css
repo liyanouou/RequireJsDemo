@@ -1,11 +1,18 @@
 @charset "UTF-8";
+
+@font-face {
+  font-family: "iconfont";
+  src: url("fonts/iconfont.eot");
+  /* IE9*/
+  src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */
+}
 .toolbar {
   position: fixed;
   left: 50%;
   bottom: 50px;
   margin-left: -26px;
 }
-
 .toolbar-item {
   display: block;
   position: relative;
@@ -15,7 +22,6 @@
   height: 52px;
   margin-top: 1px;
 }
-
 .toolbar-item:after {
   content: "";
   background-repeat: no-repeat;
@@ -35,15 +41,6 @@
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-
-
-@font-face {
-  font-family: "iconfont";
-  src: url("fonts/iconfont.eot");
-  /* IE9*/
-  src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#iconfont") format("svg");
-  /* iOS 4.1- */
-}
 .toolbar-btn {
   display: block;
   position: absolute;
@@ -53,7 +50,6 @@
   width: 52px;
   height: 52px;
 }
-
 .toolbar-btn:hover:before {
   top: -52px;
 }
@@ -105,7 +101,6 @@
   -o-transition: top 0.3s;
   transition: top 0.3s;
 }
-
 .toolbar-item-download:after {
   content: "";
   background-image: url(../images/download.png);
@@ -132,7 +127,6 @@
 .toolbar-item-download .toolbar-btn:after {
   content: 'APP\A下载';
 }
-
 .toolbar-item-weixin:after {
   content: "";
   background-image: url(../images/weixin.png);
@@ -167,3 +161,8 @@
 .toolbar-item-top .toolbar-btn:after {
   content: '返回\A顶部';
 }
+.bg{
+  width:100%;
+  height:2000px;
+}
+

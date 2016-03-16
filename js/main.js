@@ -15,4 +15,3 @@ require(['jquery', 'backtop'], function($, backtop) {
 	new backtop.BackTop($("#backtop"),opts);
 });
 
-
