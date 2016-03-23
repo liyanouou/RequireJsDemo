@@ -13,5 +13,13 @@ require(['jquery', 'backtop'], function($, backtop) {
 		dest : 0
 	};
 	new backtop.BackTop($("#backtop"),opts);
+
+	$("#weixin").on('click',function(event){
+		event.preventDefault();
+	});
+
+	$("#download").on('click',function(event){
+		event.preventDefault();
+	})
 });
 
